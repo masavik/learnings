@@ -16,3 +16,10 @@ test "naughty pointer" {
     var y: *u8 = @intToPtr(*u8, x);
     _ = y;
 }
+
+test "const pointer" {
+    const x: u8 = 1;
+    var y = &x;
+
+    y.* += 1;
+}
