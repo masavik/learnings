@@ -1,0 +1,32 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: redis-standalone
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: redis-standalone
+  labels:
+    deployment: redis
+spec:
+  selector:
+    matchLabels:
+      pod: redis
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        pod: redis
+    spec:
+      containers:
+        - name: master
+          image: redis:6.2.7
+          resources:
+            requests:
+              cpu: 100m
+              memory: 100Mi
+          ports:
+          - containerPort: 6379
