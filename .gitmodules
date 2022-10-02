@@ -1,0 +1,3 @@
+[submodule "argo-workflow/argo-workflows"]
+	path = argo-workflow/argo-workflows
+	url = https://github.com/argoproj/argo-workflows.git
