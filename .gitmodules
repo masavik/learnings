@@ -7,3 +7,7 @@
 [submodule "zig/wasmtime-hello"]
 	path = zig/wasmtime-hello
 	url = git@github.com:samof76/wasmtime-hello.git
+[submodule "zig/redis_module/redis"]
+	path = zig/redis_module/redis
+	url = https://github.com/redis/redis
+	branch = 6.0
