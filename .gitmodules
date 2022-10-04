@@ -4,3 +4,6 @@
 [submodule "zig/zig-lua-wrapper"]
 	path = zig/zig-lua-wrapper
 	url = https://github.com/ConnorRigby/zig-lua-wrapper.git
+[submodule "zig/wasmtime-hello"]
+	path = zig/wasmtime-hello
+	url = git@github.com:samof76/wasmtime-hello.git
