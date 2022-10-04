@@ -1,3 +1,6 @@
 [submodule "argo-workflow/argo-workflows"]
 	path = argo-workflow/argo-workflows
 	url = https://github.com/argoproj/argo-workflows.git
+[submodule "zig/zig-lua-wrapper"]
+	path = zig/zig-lua-wrapper
+	url = https://github.com/ConnorRigby/zig-lua-wrapper.git
